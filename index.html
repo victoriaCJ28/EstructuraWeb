@@ -11,13 +11,15 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Estructura Web</title>
 </head>
 
-<body>
+<body style="background-color: #B0CBD9;">
     <!-- header y navigation bar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d0d0d">
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #0d0d0d">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#home" aria-current="page"><img src="./img/logo_transparent.png" alt=""
                         style="height: 12vh" id="logo" /></a>
@@ -32,10 +34,10 @@
                             <a class="nav-link" href="#info">INFO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SECTION-1</a>
+                            <a class="nav-link" href="#sectionOne">SECTION-1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SECTION-2</a>
+                            <a class="nav-link" href="#sectionTwo">SECTION-2</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">GALLERY</a>
@@ -55,13 +57,13 @@
         <div id="sliderControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/slide1.jpg" class="d-block w-100" alt="..." style="height: 85vh" />
+                    <img src="./img/slide1.jpg" class="d-block w-100" alt="Mountains" style="height: 85vh" />
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/slide2.jpg" class="d-block w-100" alt="..." style="height: 85vh" />
+                    <img src="./img/slide2.jpg" class="d-block w-100" alt="Lake sunset" style="height: 85vh" />
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/slide3.jpg" class="d-block w-100" alt="..." style="height: 85vh" />
+                    <img src="./img/slide3.jpg" class="d-block w-100" alt="Like night" style="height: 85vh" />
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#sliderControls" data-bs-slide="prev">
@@ -82,7 +84,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card">
-                        <img src="./img/card.jpg" class="card-img-top" alt="..." />
+                        <img src="./img/card.jpg" class="card-img-top" alt="Meditation" />
                         <div class="card-body">
                             <h5 class="card-title">Title 1</h5>
                             <p class="card-text">
@@ -94,7 +96,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="./img/card.jpg" class="card-img-top" alt="..." />
+                        <img src="./img/card.jpg" class="card-img-top" alt="Meditation" />
                         <div class="card-body">
                             <h5 class="card-title">Title 2</h5>
                             <p class="card-text">
@@ -106,7 +108,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="./img/card.jpg" class="card-img-top" alt="..." />
+                        <img src="./img/card.jpg" class="card-img-top" alt="Meditation" />
                         <div class="card-body">
                             <h5 class="card-title">Title 3</h5>
                             <p class="card-text">
@@ -126,10 +128,77 @@
             </div>
         </div>
     </section>
+    <section style="background-color: #21425B;">
+        <div class="container" id="sectionOne">
+            <div class="row">
+                <div class="col-sm-6 justify-content-center  mt-3 mb-3">
+                    <div class="imageBox mt-2 mb-2">
+                        <img src="./img/sections.jpg" alt="Coffe Time" width="90%">
+                    </div>
+                </div>
+                <div class="col-sm-6 ">
+                    <h1 class="fs-2 text-center text-light mt-5 mb-5"> SECTION-1 TITLE</h1>
+                    <div class="d-block text-light text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis accusamus ipsam
+                            mollitia quidem maiores veniam nisi fuga deserunt! Commodi eaque rerum atque numquam ipsam
+                            nam ex minima. Hic, esse?</p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-outline-info">Show more</button>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #5676A5;">
+        <div class="container" id="sectionTwo">
+            <div class="row">
+                <div class="col-sm-6 ">
+                    <h1 class="fs-2 text-center text-light mt-5 mb-5"> SECTION-2 TITLE</h1>
+                    <div class="d-block text-light text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veritatis accusamus ipsam
+                            mollitia quidem maiores veniam nisi fuga deserunt! Commodi eaque rerum atque numquam ipsam
+                            nam ex minima. Hic, esse?</p>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-outline-info">Show more</button>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 justify-content-center  mt-3 mb-3">
+                    <div class="imageBox mt-2 mb-2">
+                        <img src="./img/sections.jpg" alt="Coffe Time" width="90%">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" id="galery">
+            <div class="your-class">
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>
