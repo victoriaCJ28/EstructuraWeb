@@ -1,85 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- responsive  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- responsive  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
     <title>Estructura Web</title>
 </head>
+
 <body>
     <!-- header y navigation bar -->
-   <header >
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 15vh;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d0d0d">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home" aria-current="page"><img src="./img/logo_transparent.png" alt=""
+                        style="height: 12vh" id="logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-5 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#info">INFO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SECTION-1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SECTION-2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header  -->
+
+    <!-- Home slider -->
+    <section class="slider_main">
+        <div id="sliderControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/slide1.jpg" class="d-block w-100" alt="..." style="height: 85vh" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide2.jpg" class="d-block w-100" alt="..." style="height: 85vh" />
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide3.jpg" class="d-block w-100" alt="..." style="height: 85vh" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#sliderControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sliderControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-      </nav>
+    </section>
+    <!-- End slider  -->
+    <!-- Information about sections -->
+    <section>
+        <div class="container " id="info">
+            <h1 class="fs-2 m-3 text-center">INFO</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/card.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Title 1</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nobis quisquam voluptate..-
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/card.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Title 2</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nobis quisquam voluptate..-
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/card.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Title 3</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nobis quisquam voluptate..-
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-   </header>
-   <!-- End header  -->
-
-   <!-- Home slider -->
-   <section class="slider_main">
-    <div id="sliderControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/slide1.jpg" class="d-block w-100" alt="..." style="height: 85vh;">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/slide2.jpg" class="d-block w-100" alt="..." style="height: 85vh;">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/slide3.jpg" class="d-block w-100" alt="..." style="height: 85vh;">
-          </div>
+            <div class="video-wrapper d-flex justify-content-center my-4">
+                <iframe width="860" height="315" src="https://www.youtube.com/embed/Kwz_O6Kto-0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#sliderControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#sliderControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-   
-  </section>
-  <!-- End slider  -->
+    </section>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
